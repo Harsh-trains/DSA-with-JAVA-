@@ -117,9 +117,5 @@
 ### File Handling
 - [ ] [File Handling](https://www.youtube.com/watch?v=fbTLqODp-_E)
     - [ ] [Reading from a file](https://www.youtube.com/watch?v=fbTLqODp-_E)
-    - [ ] [Writing to a file](https://youtu.be/eq_gdBy2nEY)
-    - [ ] [Buffered Writer and Reader](https://youtu.be/hTYvl_oN7hM)
-
-### Linked List and Recursion - Practice Problems
-- [ ] [Linked List and Recursion - Practice Problems](https://youtu.be/kl70gNQwl0I)
-
+    - [ ] [Writing to a file](https://youtu.be/9Uus6BHUu9k)
+    - [ ] [Directory Handling](https://youtu.be/tpUM6-9D-mg)
