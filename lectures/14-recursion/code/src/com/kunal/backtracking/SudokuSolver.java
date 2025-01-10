@@ -2,16 +2,16 @@ package com.kunal.backtracking;
 
 public class SudokuSolver {
     public static void main(String[] args) {
-        int[][] board = new int[][]{
-                {3, 0, 6, 5, 0, 8, 4, 0, 0},
-                {5, 2, 0, 0, 0, 0, 0, 0, 0},
-                {0, 8, 7, 0, 0, 0, 0, 3, 1},
-                {0, 0, 3, 0, 1, 0, 0, 8, 0},
-                {9, 0, 0, 8, 6, 3, 0, 0, 5},
-                {0, 5, 0, 0, 9, 0, 6, 0, 0},
-                {1, 3, 0, 0, 0, 0, 2, 5, 0},
-                {0, 0, 0, 0, 0, 0, 0, 7, 4},
-                {0, 0, 5, 2, 0, 6, 3, 0, 0}
+        int[][] board = new int[][] {
+                { 3, 0, 6, 5, 0, 8, 4, 0, 0 },
+                { 5, 2, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 8, 7, 0, 0, 0, 0, 3, 1 },
+                { 0, 0, 3, 0, 1, 0, 0, 8, 0 },
+                { 9, 0, 0, 8, 6, 3, 0, 0, 5 },
+                { 0, 5, 0, 0, 9, 0, 6, 0, 0 },
+                { 1, 3, 0, 0, 0, 0, 2, 5, 0 },
+                { 0, 0, 0, 0, 0, 0, 0, 7, 4 },
+                { 0, 0, 5, 2, 0, 6, 3, 0, 0 }
         };
 
         if (solve(board)) {
@@ -67,14 +67,13 @@ public class SudokuSolver {
     }
 
     private static void display(int[][] board) {
-        for(int[] row : board) {
-            for(int num : row) {
+        for (int[] row : board) {
+            for (int num : row) {
                 System.out.print(num + " ");
             }
             System.out.println();
         }
     }
-
 
     static boolean isSafe(int[][] board, int row, int col, int num) {
         // check the row
@@ -85,15 +84,14 @@ public class SudokuSolver {
             }
         }
 
-        // check the col
-        for (int[] nums : board) {
-            // check if the number is in the col
-            if (nums[col] == num) {
-                return false;
+        // check the column
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][col] == num) { // Notice 'i' is now used for rows, and 'col' is fixed
+                return false; // Number already exists in this column
             }
         }
 
-        int sqrt = (int)(Math.sqrt(board.length));
+        int sqrt = (int) (Math.sqrt(board.length));
         int rowStart = row - row % sqrt;
         int colStart = col - col % sqrt;
 
