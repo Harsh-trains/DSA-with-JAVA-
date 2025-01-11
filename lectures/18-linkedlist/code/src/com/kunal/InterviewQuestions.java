@@ -5,7 +5,7 @@ import javax.swing.*;
 public class InterviewQuestions {
 
     // https://leetcode.com/problems/linked-list-cycle
-    // Amazon and Microsoft
+    // Amazon and google
     public boolean hasCycle(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
