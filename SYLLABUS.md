@@ -143,6 +143,7 @@
     - Fenwick Tree / Binary Indexed Tree
 - Heaps
     - [Introduction](https://youtu.be/Qf-TDPr0nYw)
+  - [Number Theory](https://youtu.be/lmSpZ0bjCyQ?t=4405)
         - Theory
         - Priority Queue
         - Heapsort
