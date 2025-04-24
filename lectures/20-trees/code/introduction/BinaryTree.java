@@ -84,41 +84,42 @@ class BinaryTree {
 
   public void preOrder() {
     preOrder(root);
-  }
+}
 
-  private void preOrder(Node node) {
+private void preOrder(Node node) {
     if (node == null) {
-      return;
+        return;
     }
     System.out.print(node.value + " ");
     preOrder(node.left);
     preOrder(node.right);
-  }
+}
 
-  public void inOrder() {
-    preOrder(root);
-  }
+public void inOrder() {
+    inOrder(root); // ❗ Corrected this line
+}
 
-  private void inOrder(Node node) {
+private void inOrder(Node node) {
     if (node == null) {
-      return;
+        return;
     }
-    preOrder(node.left);
+    inOrder(node.left); // ❗ Corrected this line
     System.out.print(node.value + " ");
-    preOrder(node.right);
-  }
+    inOrder(node.right); // ❗ Corrected this line
+}
 
-  public void postOrder() {
-    preOrder(root);
-  }
+public void postOrder() {
+    postOrder(root); // ❗ Corrected this line
+}
 
-  private void postOrder(Node node) {
+private void postOrder(Node node) {
     if (node == null) {
-      return;
+        return;
     }
-    preOrder(node.left);
-    preOrder(node.right);
+    postOrder(node.left); // ❗ Corrected this line
+    postOrder(node.right); // ❗ Corrected this line
     System.out.print(node.value + " ");
-  }
+}
+
 
 }
