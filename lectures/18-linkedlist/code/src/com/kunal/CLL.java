@@ -15,12 +15,13 @@ public class CLL {
         if (head == null) {
             head = node;
             tail = node;
-            return;
+            // Make it circular
+            node.next = head; // Add this line
+        } else {
+            tail.next = node;
+            node.next = head;
+            tail = node;
         }
-
-        tail.next = node;
-        node.next = head;
-        tail = node;
     }
 
     public void display() {
@@ -28,9 +29,7 @@ public class CLL {
         if (head != null) {
             do {
                 System.out.print(node.val + " -> ");
-                if (node.next != null) {
-		    node = node.next;
-		}
+                node = node.next; // Assignment should be unconditional
             } while (node != head);
         }
         System.out.println("HEAD");
@@ -72,5 +71,23 @@ public class CLL {
         public Node(int val) {
             this.val = val;
         }
+    }
+
+    public static void main(String[] args) {
+        CLL list1 = new CLL();
+        System.out.println("Displaying empty list:");
+        list1.display(); // Expected: HEAD
+
+        CLL list2 = new CLL();
+        list2.insert(10);
+        System.out.println("Displaying list with one element:");
+        list2.display(); // Expected: 10 -> HEAD
+
+        CLL list3 = new CLL();
+        list3.insert(10);
+        list3.insert(20);
+        list3.insert(30);
+        System.out.println("Displaying list with multiple elements:");
+        list3.display(); // Expected: 10 -> 20 -> 30 -> HEAD
     }
 }
