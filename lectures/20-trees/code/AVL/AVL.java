@@ -90,8 +90,8 @@ class AVL {
     c.right = p;
     p.left = t;
     
-    p.height = Math.max(height(p.left), height(p.right) + 1);
-    c.height = Math.max(height(c.left), height(c.right) + 1);
+    p.height = Math.max(height(p.left), height(p.right)) + 1;
+    c.height = Math.max(height(c.left), height(c.right)) + 1;
 
     return c;
   }
@@ -103,8 +103,8 @@ class AVL {
     p.left = c;
     c.right = t;
     
-    p.height = Math.max(height(p.left), height(p.right) + 1);
-    c.height = Math.max(height(c.left), height(c.right) + 1);
+    p.height = Math.max(height(p.left), height(p.right)) + 1;
+    c.height = Math.max(height(c.left), height(c.right)) + 1;
 
     return p;
   }
