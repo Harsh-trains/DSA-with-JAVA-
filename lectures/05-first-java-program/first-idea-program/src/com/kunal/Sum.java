@@ -9,6 +9,7 @@ public class Sum {
         float num2 = input.nextFloat();
 
         float sum = num1 + num2;
+        long sum = num2 + num2;cd
 
         System.out.println("Sum = " + sum);
     }
