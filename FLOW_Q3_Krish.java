@@ -11,7 +11,7 @@ class FLOW_Q3_Krish
         for (int i = 1; i <= 10; i++) {
             System.out.println(num + " x " + i + " = " + (num * i));
         }
-        
+        //
         // Close the scanner to prevent resource leaks
         sc.close();
     }
