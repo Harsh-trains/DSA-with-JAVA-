@@ -59,7 +59,6 @@
 - [Gray code](https://practice.geeksforgeeks.org/problems/gray-code-1611215248/1/) `GFG` `Google`
 - [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) `leetcode`
 - [combination Sum III](https://leetcode.com/problems/combination-sum-iii/) `leetcode`
-- [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) `leetcode`
 - [Letter tile possibilities](https://leetcode.com/problems/letter-tile-possibilities/) `leetcode`
 - [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) `leetcode`
 - [Sort a stack using recursion](https://www.geeksforgeeks.org/sort-a-stack-using-recursion/) `GFG`
@@ -74,6 +73,7 @@
 - [Reorder List](https://leetcode.com/problems/reorder-list/) `leetcode`
 
 ## Hard
+- [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) `leetcode`
 - [Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/) `leetcode`
 - [Special Binary String](https://leetcode.com/problems/special-binary-string/) `leetcode`
 - [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) `leetcode`
