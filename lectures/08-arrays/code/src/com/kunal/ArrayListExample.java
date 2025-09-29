@@ -15,6 +15,7 @@ public class ArrayListExample {
 //        list.add(43);
 //        list.add(654);
 //        list.add(8765);
+//        list.add(2345)
 
 //        System.out.println(list.contains(765432));
 //        System.out.println(list);
