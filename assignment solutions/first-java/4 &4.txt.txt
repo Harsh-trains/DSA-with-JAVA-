@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+//Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
+//Take 2 numbers as input and print the largest number.
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc  = new Scanner(System.in);
+//1
+        int a = 10;
+        int b = 20;
+        int sum = a + b;
+        int prod = a * b;
+        int minus = a - b;
+        System.out.println(sum);
+        System.out.println(prod);
+        System.out.println(minus);
+//2
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        if(num1 > num2){
+            System.out.println(num1 + "is largest");
+        }else{
+            System.out.println(num2 + "is largest ");
+        }
+        
+  	}
+}
+

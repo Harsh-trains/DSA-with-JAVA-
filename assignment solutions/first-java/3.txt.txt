@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+//Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc  = new Scanner(System.in);
+        System.out.println("Enter the principal");
+        int p = sc.nextInt();
+        System.out.println("Enter the Time");
+        int t = sc.nextInt();
+        System.out.println("Enter the Rate");
+        int r = sc.nextInt();
+        int si = (p * t * r)/ 100;
+        System.out.println(si);
+  	}
+}
+
+import java.util.Scanner;
+
+//Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc  = new Scanner(System.in);
+        System.out.println("Enter the principal");
+        int p = sc.nextInt();
+        System.out.println("Enter the Time");
+        int t = sc.nextInt();
+        System.out.println("Enter the Rate");
+        int r = sc.nextInt();
+        int si = (p * t * r)/ 100;
+        System.out.println(si);
+  	}
+}
+
+import java.util.Scanner;
+
+//Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc  = new Scanner(System.in);
+        System.out.println("Enter the principal");
+        int p = sc.nextInt();
+        System.out.println("Enter the Time");
+        int t = sc.nextInt();
+        System.out.println("Enter the Rate");
+        int r = sc.nextInt();
+        int si = (p * t * r)/ 100;
+        System.out.println(si);
+  	}
+}
+
