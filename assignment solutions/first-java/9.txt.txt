@@ -1,0 +1,32 @@
+import java.util.*;
+import java.lang.Math;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // 153 = 1 ^3 + 5 ^ 3 + 3 ^ 3 = 1 + 125 + 27 = 153;
+        System.out.println("Enter the Armstrong number : ");
+        int num = sc.nextInt();
+        int orgNum = num;
+        
+        int len = 0;
+        int temp = num;
+        while (temp > 0){
+            len++;
+            temp /=  10;
+        }
+        
+        int result = 0;
+        temp = num;
+        while(temp  > 0 ){
+            int digit  = temp % 10;
+            result += (int) Math.pow(digit, len);
+            temp /= 10;
+        }
+        if(result == orgNum){
+            System.out.println("It is an ArmStrong number");
+        }else{
+            System.out.println("Nope");
+        }
+	}
+}

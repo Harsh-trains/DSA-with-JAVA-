@@ -1,0 +1,23 @@
+import java.util.Scanner;
+// 8) To find out whether the given String is Palindrome or not.
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		// 12321 == (Reversed) 12321;
+		System.out.println("Enter the Palindrome number");
+		int pali = sc.nextInt();
+		int paliCopy = pali;
+		int reverse  = 0;
+		while(pali > 0) {
+			int num  = pali % 10;
+			reverse = reverse * 10 +  num;
+			pali /= 10;
+		}
+		if(reverse == paliCopy) {
+			System.out.println("It is a perfect Palindrome");
+		}else{
+		    System.out.println("Not a palindrome");
+		}
+	}
+}

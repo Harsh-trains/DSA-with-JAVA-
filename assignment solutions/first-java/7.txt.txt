@@ -1,0 +1,21 @@
+import java.util.Scanner;
+// 7) To calculate Fibonacci Series up to n numbers.
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // 0,1,1,2,3,5,8,13,21,34
+        System.out.println("Enter the fibbonacci number");
+        int fibboNum = sc.nextInt();
+        int num1 = 0;
+        int num2 = 1;
+        System.out.println(num1);
+        System.out.println(num2);
+        for(int i = 0; i< fibboNum; i++){
+            int num3 = num1 + num2;
+            System.out.println(num3);
+            num1 = num2;
+            num2 = num3;
+        }
+	}
+}
