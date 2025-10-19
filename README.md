@@ -4,5 +4,5 @@
 - [Course website](https://www.techwithkunal.com/courses/dsa)
 - [Assignments](https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/tree/main/assignments) (solutions can be found on LeetCode)
 -this is my fav community
--i am a new learner of git AND github
+-i am a new learner of git
 
