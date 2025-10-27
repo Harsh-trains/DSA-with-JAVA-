@@ -8,7 +8,7 @@ public class BinarySearch {
         int ans = binarySearch(arr, target);
         System.out.println(ans);
     }
-
+    //for sorted ascending order arrays 
     // return the index
     // return -1 if it does not exist
     static int binarySearch(int[] arr, int target) {
